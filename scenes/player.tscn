@@ -148,7 +148,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"dash",
-"speed": 30.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -236,6 +236,8 @@ position = Vector2(0, -10)
 sprite_frames = SubResource("SpriteFrames_ij6vw")
 animation = &"dash"
 autoplay = "idle"
+frame = 4
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=475979105]
 position = Vector2(0, -8)
@@ -246,5 +248,5 @@ wait_time = 0.5
 one_shot = true
 
 [node name="DashTimer" type="Timer" parent="." unique_id=480663157]
-wait_time = 0.2
+wait_time = 0.3
 one_shot = true

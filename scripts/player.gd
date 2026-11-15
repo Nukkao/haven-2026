@@ -5,7 +5,7 @@ const SPEED = 150.0
 const AIRSPEED = 15
 const MAXSPEED = 200
 const JUMP_VELOCITY = -200
-const DASH_SPEED = 300
+const DASH_SPEED = 250
 
 var dash_ready = true
 var dashing = false
@@ -55,7 +55,7 @@ func _physics_process(delta: float) -> void:
 			#play idle animation
 			animated_sprite.play("idle")
 	else:
-		if air_move_timer.is_stopped():
+		if air_move_timer.is_stopped() and not dashing:
 			animated_sprite.play("air-idle")
 	
 	#flipping sprites for direction
@@ -65,7 +65,7 @@ func _physics_process(delta: float) -> void:
 		animated_sprite.flip_h = true
 	
 	#AIR MOVEMENT
-	if not air_move_timer.is_stopped():
+	if not air_move_timer.is_stopped() and not dashing:
 		animated_sprite.play("flip")
 		velocity.x += direction * AIRSPEED
 	
@@ -82,10 +82,11 @@ func _physics_process(delta: float) -> void:
 		dashing = true
 		velocity.x = direction * DASH_SPEED
 		dash_timer.start()
+		animated_sprite.play("dash")
 		
 	if dashing:
 		velocity.y = 0
-		animated_sprite.play("dash")
+	
 	
 	
 	move_and_slide()
