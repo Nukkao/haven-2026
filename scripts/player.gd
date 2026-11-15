@@ -17,6 +17,7 @@ var dashing = false
 #death on spike
 func _on_spike_body_entered(body: Node2D) -> void:
 	position = Vector2(1,1)
+	$death.play()
 
 #jump when touch orb
 func _on_area_2d_body_entered(body: Node2D) -> void:
@@ -24,6 +25,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	air_move_timer.start()
 	dash_timer.stop()
 	dash_ready = true
+	$hitOrb.play()
 
 func _physics_process(delta: float) -> void:
 	#end the dash
@@ -83,10 +85,12 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * DASH_SPEED
 		dash_timer.start()
 		animated_sprite.play("dash")
+		$dash.play()
 		
 	if dashing:
 		velocity.y = 0
 	
+	#sound effects
 	
 	
 	move_and_slide()

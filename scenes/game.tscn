@@ -2,6 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://3fkq6q5xrlmw" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://c8qiccquv25pc" path="res://sprites/spike.png" id="2_lnu2h"]
+[ext_resource type="AudioStream" uid="uid://cwme7fv53mwqr" path="res://sounds/orb.wav" id="2_u5sy4"]
+[ext_resource type="AudioStream" uid="uid://ocxil87du5dh" path="res://sounds/death.wav" id="3_gee14"]
+[ext_resource type="AudioStream" uid="uid://dlkacwe0w63bm" path="res://sounds/whoosh.wav" id="4_0tnpc"]
 [ext_resource type="Texture2D" uid="uid://l6se3c6h7xet" path="res://sprites/platform.png" id="4_iywne"]
 [ext_resource type="Texture2D" uid="uid://cl517w62q2haf" path="res://animations/orbanimationgrid.png" id="4_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://1xwm1gtfpa11" path="res://sprites/grass.png" id="5_iywne"]
@@ -114,6 +117,17 @@ limit_right = 0
 limit_bottom = 30
 position_smoothing_enabled = true
 script = SubResource("GDScript_yqjtg")
+
+[node name="hitOrb" type="AudioStreamPlayer" parent="Player" unique_id=118894496]
+stream = ExtResource("2_u5sy4")
+
+[node name="death" type="AudioStreamPlayer" parent="Player" unique_id=1705242242]
+stream = ExtResource("3_gee14")
+
+[node name="dash" type="AudioStreamPlayer" parent="Player" unique_id=364362022]
+stream = ExtResource("4_0tnpc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Player" unique_id=89322813]
 
 [node name="world-boundaries" type="StaticBody2D" parent="." unique_id=938131772]
 
