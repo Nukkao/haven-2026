@@ -37,7 +37,7 @@ normal = Vector2(1, 0)
 distance = -96.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yl3u6"]
-size = Vector2(20, 10.958906)
+size = Vector2(18.750004, 18.75)
 
 [node name="Game" type="Node2D" unique_id=805192047]
 
@@ -67,37 +67,41 @@ position = Vector2(-7.6293945e-06, 64)
 scale = Vector2(3.5625002, 1)
 texture = ExtResource("3_lnu2h")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=3563345]
+[node name="topbox" type="StaticBody2D" parent="." unique_id=3563345]
 position = Vector2(77, -35)
 scale = Vector2(1.6, 1.6)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=461421537]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="topbox" unique_id=461421537]
+position = Vector2(0, 1.9073486e-06)
+scale = Vector2(0.9999997, 0.9999997)
 shape = SubResource("RectangleShape2D_yl3u6")
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1381601486]
+[node name="Sprite2D" type="Sprite2D" parent="topbox" unique_id=1381601486]
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("3_lnu2h")
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1926251261]
+[node name="botbox" type="StaticBody2D" parent="." unique_id=1926251261]
 position = Vector2(45, -13.999999)
 scale = Vector2(1.6, 1.6)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=48966486]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="botbox" unique_id=48966486]
+position = Vector2(0, 1.9073486e-06)
+scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("RectangleShape2D_yl3u6")
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2" unique_id=1166071859]
+[node name="Sprite2D" type="Sprite2D" parent="botbox" unique_id=1166071859]
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("3_lnu2h")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=108489005]
+[node name="spike" type="Area2D" parent="." unique_id=108489005]
 position = Vector2(-36, -10.999997)
 rotation = -1.5707964
 scale = Vector2(0.11, 0.03)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1904869820]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike" unique_id=1904869820]
 scale = Vector2(6.6666665, 6.6666665)
 shape = SubResource("RectangleShape2D_yl3u6")
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=716993379]
+[node name="Sprite2D" type="Sprite2D" parent="spike" unique_id=716993379]
 scale = Vector2(0.21, 0.21)
 texture = ExtResource("3_lbhrr")
