@@ -24,7 +24,7 @@ distance = -96.0
 zoom = Vector2(5, 5)
 limit_left = 0
 limit_right = 0
-limit_bottom = 0
+limit_bottom = 30
 position_smoothing_enabled = true
 script = ExtResource("2_yqjtg")
 
