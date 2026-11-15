@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://1xwm1gtfpa11" path="res://sprites/grass.png" id="5_iywne"]
 [ext_resource type="AudioStream" uid="uid://cm3w46r4sp4hu" path="res://sounds/gravity.wav" id="5_vtaks"]
 [ext_resource type="Texture2D" uid="uid://4yyea3s8hxyq" path="res://sprites/dirt.png" id="6_p57ef"]
-[ext_resource type="AudioStream" uid="uid://dmcewi51cfwdn" path="res://happy-wheels-oh-my-leg.mp3" id="6_trtic"]
 [ext_resource type="Texture2D" uid="uid://bgbxlf8m1rmjs" path="res://sprites/foregroundbricks.png" id="7_0tnpc"]
 [ext_resource type="Texture2D" uid="uid://dtqt080ag37k4" path="res://sprites/bricks.png" id="8_vtaks"]
 [ext_resource type="Texture2D" uid="uid://bmuvc6g2ene4d" path="res://sprites/window.png" id="9_kvpfn"]
@@ -129,7 +128,7 @@ sources/4 = SubResource("TileSetAtlasSource_ir15t")
 
 [node name="Player" parent="." unique_id=251685059 instance=ExtResource("1_uwrxv")]
 z_index = 4
-position = Vector2(-88, -427)
+position = Vector2(1, -13)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=245425820]
 zoom = Vector2(5, 5)
@@ -150,9 +149,6 @@ stream = ExtResource("4_0tnpc")
 
 [node name="jump" type="AudioStreamPlayer" parent="Player" unique_id=89322813]
 stream = ExtResource("5_vtaks")
-
-[node name="greatfall" type="AudioStreamPlayer" parent="Player" unique_id=1290056091]
-stream = ExtResource("6_trtic")
 
 [node name="world-boundaries" type="StaticBody2D" parent="." unique_id=938131772]
 

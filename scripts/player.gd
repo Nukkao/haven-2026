@@ -91,9 +91,4 @@ func _physics_process(delta: float) -> void:
 	if dashing:
 		velocity.y = 0
 	
-	#sound effects
-	if velocity.y > 5 and is_on_floor():
-		$greatfall.play()
-		print("esfsefds")
-	
 	move_and_slide()
