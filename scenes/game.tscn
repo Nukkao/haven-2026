@@ -14,6 +14,9 @@
 [ext_resource type="Texture2D" uid="uid://dtqt080ag37k4" path="res://sprites/bricks.png" id="8_vtaks"]
 [ext_resource type="Texture2D" uid="uid://bmuvc6g2ene4d" path="res://sprites/window.png" id="9_kvpfn"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_lmnbr"]
+font_color = Color(0.6975558, 0, 0.073426984, 1)
+
 [sub_resource type="GDScript" id="GDScript_yqjtg"]
 script/source = "extends Camera2D
 
@@ -125,6 +128,13 @@ sources/3 = SubResource("TileSetAtlasSource_trtic")
 sources/4 = SubResource("TileSetAtlasSource_ir15t")
 
 [node name="Game" type="Node2D" unique_id=805192047]
+
+[node name="Label" type="Label" parent="." unique_id=1361793857]
+offset_left = -87.0
+offset_top = -50.0
+offset_right = 9.0
+offset_bottom = -27.0
+label_settings = SubResource("LabelSettings_lmnbr")
 
 [node name="Player" parent="." unique_id=251685059 instance=ExtResource("1_uwrxv")]
 z_index = 4

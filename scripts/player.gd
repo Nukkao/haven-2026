@@ -6,7 +6,7 @@ const AIRSPEED = 5
 const MAXSPEED = 200
 const JUMP_VELOCITY = -200
 const DASH_SPEED = 250
-
+var deaths =0
 var dash_ready = true
 var dashing = false
 
@@ -18,7 +18,8 @@ var dashing = false
 func _on_spike_body_entered(body: Node2D) -> void:
 	position = Vector2(1,1)
 	$death.play()
-
+	deaths +=1
+	$"../Label".text = (str(deaths)+ " deaths")
 #jump when touch orb
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	velocity.y = -300
