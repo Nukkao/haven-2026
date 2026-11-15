@@ -244,3 +244,7 @@ shape = SubResource("CircleShape2D_yf5fn")
 [node name="AirMoveTimer" type="Timer" parent="." unique_id=604789431]
 wait_time = 0.5
 one_shot = true
+
+[node name="DashTimer" type="Timer" parent="." unique_id=480663157]
+wait_time = 0.2
+one_shot = true

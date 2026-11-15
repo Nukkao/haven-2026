@@ -5,19 +5,35 @@ const SPEED = 150.0
 const AIRSPEED = 15
 const MAXSPEED = 200
 const JUMP_VELOCITY = -200
+const DASH_SPEED = 300
+
+var dash_ready = true
+var dashing = false
 
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var air_move_timer = $AirMoveTimer
+@onready var dash_timer = $DashTimer
 
+#death on spike
+func _on_spike_body_entered(body: Node2D) -> void:
+	position = Vector2(1,1)
+
+#jump when touch orb
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	velocity.y = -300
 	air_move_timer.start()
+	dash_timer.stop()
+	dash_ready = true
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
+	#end the dash
+	if dash_timer.is_stopped():
+		dashing = false
 
+	# Add the gravity.
+	if not is_on_floor() and not dashing:
+		velocity += get_gravity() * delta
+ 
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
@@ -29,6 +45,7 @@ func _physics_process(delta: float) -> void:
 	#direction will be taken regardless
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if is_on_floor():
+		dash_ready = true
 		if direction:
 			velocity.x = direction * SPEED
 			#play running animation
@@ -53,16 +70,22 @@ func _physics_process(delta: float) -> void:
 		velocity.x += direction * AIRSPEED
 	
 	#Limit speed
-	if abs(velocity.x) > MAXSPEED:
+	if abs(velocity.x) > MAXSPEED and not dashing:
 		if velocity.x > 0:
 			velocity.x = MAXSPEED
 		else:
 			velocity.x = -MAXSPEED
 	
+	#Dash
+	if Input.is_action_just_pressed("dash") and dash_ready and direction != 0:
+		dash_ready = false
+		dashing = true
+		velocity.x = direction * DASH_SPEED
+		dash_timer.start()
+		
+	if dashing:
+		velocity.y = 0
+		animated_sprite.play("dash")
+	
 	
 	move_and_slide()
-
-#death on spike
-func _on_spike_body_entered(body: Node2D) -> void:
-	position = Vector2(1,1)
-	pass # Replace with function body.
