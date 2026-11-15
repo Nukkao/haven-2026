@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://3fkq6q5xrlmw"]
 
+[ext_resource type="Script" uid="uid://dt8sjdfy0kc8n" path="res://scenes/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://24ynuatrl5pv" path="res://animations/animationgrid.png" id="1_lj8jo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ij6vw"]
@@ -42,13 +43,14 @@ animations = [{
 radius = 8.0
 
 [node name="Player" type="CharacterBody2D" unique_id=251685059]
+script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1145236457]
 position = Vector2(0, -10)
 sprite_frames = SubResource("SpriteFrames_ij6vw")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.15131877
+frame_progress = 0.33811298
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=475979105]
 position = Vector2(0, -8)

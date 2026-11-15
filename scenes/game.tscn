@@ -2,10 +2,31 @@
 
 [ext_resource type="PackedScene" uid="uid://3fkq6q5xrlmw" path="res://scenes/player.tscn" id="1_uwrxv"]
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_g4v7s"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yf5fn"]
+normal = Vector2(-1, 0)
+distance = -96.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_57qmd"]
+normal = Vector2(1, 0)
+distance = -96.0
+
 [node name="Game" type="Node2D" unique_id=805192047]
 
 [node name="Player" parent="." unique_id=251685059 instance=ExtResource("1_uwrxv")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=245425820]
-position = Vector2(0, -22)
+position = Vector2(0, -41)
 zoom = Vector2(5, 5)
+
+[node name="world-boundaries" type="StaticBody2D" parent="." unique_id=938131772]
+
+[node name="floor" type="CollisionShape2D" parent="world-boundaries" unique_id=1217096492]
+shape = SubResource("WorldBoundaryShape2D_g4v7s")
+
+[node name="right-wall" type="CollisionShape2D" parent="world-boundaries" unique_id=1543238845]
+shape = SubResource("WorldBoundaryShape2D_yf5fn")
+
+[node name="left-wall" type="CollisionShape2D" parent="world-boundaries" unique_id=312628457]
+shape = SubResource("WorldBoundaryShape2D_57qmd")
