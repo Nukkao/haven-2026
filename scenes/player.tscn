@@ -31,14 +31,6 @@ region = Rect2(20, 40, 20, 20)
 atlas = ExtResource("1_lj8jo")
 region = Rect2(40, 40, 20, 20)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
-atlas = ExtResource("1_lj8jo")
-region = Rect2(60, 40, 20, 20)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
-atlas = ExtResource("1_lj8jo")
-region = Rect2(80, 40, 20, 20)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_fjrip"]
 atlas = ExtResource("1_lj8jo")
 region = Rect2(0, 60, 20, 20)
@@ -139,12 +131,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dqkch")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qlg0r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tuyoq")
 }],
 "loop": 0,
 "name": &"dash",
@@ -236,7 +222,7 @@ position = Vector2(0, -10)
 sprite_frames = SubResource("SpriteFrames_ij6vw")
 animation = &"dash"
 autoplay = "idle"
-frame = 4
+frame = 1
 frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=475979105]
