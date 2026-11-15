@@ -8,7 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://l6se3c6h7xet" path="res://sprites/platform.png" id="4_iywne"]
 [ext_resource type="Texture2D" uid="uid://cl517w62q2haf" path="res://animations/orbanimationgrid.png" id="4_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://1xwm1gtfpa11" path="res://sprites/grass.png" id="5_iywne"]
+<<<<<<< Updated upstream
 [ext_resource type="AudioStream" uid="uid://cm3w46r4sp4hu" path="res://sounds/gravity.wav" id="5_vtaks"]
+=======
+[ext_resource type="AudioStream" uid="uid://badnk73mi1umw" path="res://sounds/gravity.wav" id="5_vtaks"]
+>>>>>>> Stashed changes
 [ext_resource type="Texture2D" uid="uid://4yyea3s8hxyq" path="res://sprites/dirt.png" id="6_p57ef"]
 [ext_resource type="Texture2D" uid="uid://bgbxlf8m1rmjs" path="res://sprites/foregroundbricks.png" id="7_0tnpc"]
 [ext_resource type="Texture2D" uid="uid://dtqt080ag37k4" path="res://sprites/bricks.png" id="8_vtaks"]
