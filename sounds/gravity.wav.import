@@ -2,11 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-<<<<<<< Updated upstream
-uid="uid://cm3w46r4sp4hu"
-=======
 uid="uid://badnk73mi1umw"
->>>>>>> Stashed changes
 path="res://.godot/imported/gravity.wav-f91abd8b85abdbf3e954e251d5b5972c.sample"
 
 [deps]
