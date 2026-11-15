@@ -40,6 +40,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		air_move_timer.start()
+		$jump.play()
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -91,6 +92,8 @@ func _physics_process(delta: float) -> void:
 		velocity.y = 0
 	
 	#sound effects
-	
+	if velocity.y > 5 and is_on_floor():
+		$greatfall.play()
+		print("esfsefds")
 	
 	move_and_slide()
