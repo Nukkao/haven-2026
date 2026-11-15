@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://3fkq6q5xrlmw" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://cptxo6oolv5hg" path="res://animations/Screenshot 2026-09-24 at 07.50.37.png" id="3_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://bfi66mrq0wc2s" path="res://icon.svg" id="3_lnu2h"]
+[ext_resource type="Texture2D" uid="uid://cxj5vhaccs51k" path="res://sprites/gdorb.png" id="4_lbhrr"]
 
 [sub_resource type="GDScript" id="GDScript_yqjtg"]
 script/source = "extends Camera2D
@@ -38,6 +39,9 @@ distance = -96.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yl3u6"]
 size = Vector2(18.750004, 18.75)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 6.0827627
 
 [node name="Game" type="Node2D" unique_id=805192047]
 
@@ -105,3 +109,16 @@ shape = SubResource("RectangleShape2D_yl3u6")
 [node name="Sprite2D" type="Sprite2D" parent="spike" unique_id=716993379]
 scale = Vector2(0.21, 0.21)
 texture = ExtResource("3_lbhrr")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1907038812]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2030670392]
+position = Vector2(-66, -11)
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1338197717]
+position = Vector2(-66.00001, -11)
+scale = Vector2(0.046442058, 0.045667063)
+texture = ExtResource("4_lbhrr")
+
+[connection signal="body_entered" from="Area2D" to="Player" method="_on_area_2d_body_entered"]

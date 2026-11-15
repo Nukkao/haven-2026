@@ -9,6 +9,10 @@ const JUMP_VELOCITY = -200
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var air_move_timer = $AirMoveTimer
 
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	velocity.y = -300
+	air_move_timer.start()
+
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
