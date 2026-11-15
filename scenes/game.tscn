@@ -98,7 +98,7 @@ scale = Vector2(0.15, 0.15)
 texture = ExtResource("3_lnu2h")
 
 [node name="spike" type="Area2D" parent="." unique_id=108489005]
-position = Vector2(-36, -10.999997)
+position = Vector2(88, -59)
 rotation = -1.5707964
 scale = Vector2(0.11, 0.03)
 
@@ -121,4 +121,5 @@ position = Vector2(-66.00001, -11)
 scale = Vector2(0.046442058, 0.045667063)
 texture = ExtResource("4_lbhrr")
 
+[connection signal="body_entered" from="spike" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Player" method="_on_area_2d_body_entered"]

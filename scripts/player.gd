@@ -61,3 +61,8 @@ func _physics_process(delta: float) -> void:
 	
 	
 	move_and_slide()
+
+#death on spike
+func _on_spike_body_entered(body: Node2D) -> void:
+	position = Vector2(1,1)
+	pass # Replace with function body.
