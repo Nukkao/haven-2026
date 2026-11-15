@@ -1,8 +1,30 @@
 [gd_scene format=3 uid="uid://babi2vf2c6am3"]
 
 [ext_resource type="PackedScene" uid="uid://3fkq6q5xrlmw" path="res://scenes/player.tscn" id="1_uwrxv"]
-[ext_resource type="Script" uid="uid://crnx22ep0e4vq" path="res://scripts/cameratracking.gd" id="2_yqjtg"]
+[ext_resource type="Texture2D" uid="uid://cptxo6oolv5hg" path="res://animations/Screenshot 2026-09-24 at 07.50.37.png" id="3_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://bfi66mrq0wc2s" path="res://icon.svg" id="3_lnu2h"]
+
+[sub_resource type="GDScript" id="GDScript_yqjtg"]
+script/source = "extends Camera2D
+
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+	#var posy = $\"../Player\".position.y
+	#position.y = posy - 20
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	'''
+	var posy = $\"../Player\".position.y
+	var difference = abs(posy - position.y)
+	if difference >= 30:
+		position.y = -abs(difference -1)
+	'''
+"
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_g4v7s"]
 
@@ -27,7 +49,7 @@ limit_left = 0
 limit_right = 0
 limit_bottom = 30
 position_smoothing_enabled = true
-script = ExtResource("2_yqjtg")
+script = SubResource("GDScript_yqjtg")
 
 [node name="world-boundaries" type="StaticBody2D" parent="." unique_id=938131772]
 
@@ -66,3 +88,16 @@ shape = SubResource("RectangleShape2D_yl3u6")
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2" unique_id=1166071859]
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("3_lnu2h")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=108489005]
+position = Vector2(-36, -10.999997)
+rotation = -1.5707964
+scale = Vector2(0.11, 0.03)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1904869820]
+scale = Vector2(6.6666665, 6.6666665)
+shape = SubResource("RectangleShape2D_yl3u6")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=716993379]
+scale = Vector2(0.21, 0.21)
+texture = ExtResource("3_lbhrr")
