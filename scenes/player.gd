@@ -33,6 +33,9 @@ func _physics_process(delta: float) -> void:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 			#play idle animation
 			animated_sprite.play("idle")
+	else:
+		if air_move_timer.is_stopped():
+			animated_sprite.play("idle")
 	
 	#flipping sprites for direction
 	if direction > 0:
