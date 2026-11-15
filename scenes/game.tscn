@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://babi2vf2c6am3"]
 
 [ext_resource type="PackedScene" uid="uid://3fkq6q5xrlmw" path="res://scenes/player.tscn" id="1_uwrxv"]
-[ext_resource type="Script" uid="uid://crnx22ep0e4vq" path="res://scenes/cameratracking.gd" id="2_yqjtg"]
+[ext_resource type="Script" uid="uid://crnx22ep0e4vq" path="res://scripts/cameratracking.gd" id="2_yqjtg"]
 [ext_resource type="Texture2D" uid="uid://bfi66mrq0wc2s" path="res://icon.svg" id="3_lnu2h"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_g4v7s"]
@@ -15,6 +15,7 @@ normal = Vector2(1, 0)
 distance = -96.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yl3u6"]
+size = Vector2(20, 10.958906)
 
 [node name="Game" type="Node2D" unique_id=805192047]
 
