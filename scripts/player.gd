@@ -12,10 +12,12 @@ var dashing = false
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var air_move_timer = $AirMoveTimer
 @onready var dash_timer = $DashTimer
+@onready var spawnpoint2 = $"../spawn2"
 
 #death on spike
 func _on_spike_body_entered(body: Node2D) -> void:
-	position = Vector2(1,1)
+	position = spawnpoint2.position
+	velocity = Vector2.ZERO
 	$death.play()
 	deaths +=1
 	$"../Label".text = (str(deaths)+ " deaths")

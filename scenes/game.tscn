@@ -146,7 +146,7 @@ label_settings = SubResource("LabelSettings_lmnbr")
 
 [node name="Player" parent="." unique_id=251685059 instance=ExtResource("1_uwrxv")]
 z_index = 4
-position = Vector2(-5, -7)
+position = Vector2(0, -737)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=245425820]
 zoom = Vector2(5, 5)
@@ -362,6 +362,50 @@ sprite_frames = SubResource("SpriteFrames_g4v7s")
 autoplay = "default"
 frame_progress = 0.6059204
 
+[node name="orb14" type="Area2D" parent="." unique_id=1394004730]
+position = Vector2(-57, -745)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="orb14" unique_id=240332870]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="orb14" unique_id=347652814]
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+frame_progress = 0.6059204
+
+[node name="orb15" type="Area2D" parent="." unique_id=825184413]
+position = Vector2(-57, -745)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="orb15" unique_id=2001250963]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="orb15" unique_id=930925757]
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+frame_progress = 0.6059204
+
+[node name="orb16" type="Area2D" parent="." unique_id=1659129335]
+position = Vector2(84, -793)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="orb16" unique_id=1342491575]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="orb16" unique_id=604434311]
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+frame_progress = 0.6059204
+
+[node name="orb17" type="Area2D" parent="." unique_id=405541465]
+position = Vector2(84, -793)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="orb17" unique_id=933823942]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="orb17" unique_id=1925730863]
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+frame_progress = 0.6059204
+
 [node name="orb13" type="Area2D" parent="." unique_id=1303970559]
 position = Vector2(55, -652)
 
@@ -559,6 +603,111 @@ shape = SubResource("RectangleShape2D_yf5fn")
 [node name="Sprite2D" type="Sprite2D" parent="tile17" unique_id=1222368574]
 texture = ExtResource("4_iywne")
 
+[node name="spike41" type="Area2D" parent="." unique_id=1748665570]
+position = Vector2(-10, -918)
+rotation = 3.1394575
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike41" unique_id=275955906]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike41" unique_id=1596912724]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile20" type="StaticBody2D" parent="." unique_id=906565659]
+position = Vector2(-10, -938)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile20" unique_id=2042573598]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile20" unique_id=1376149079]
+texture = ExtResource("4_iywne")
+
+[node name="spike42" type="Area2D" parent="." unique_id=1131426000]
+position = Vector2(10, -918)
+rotation = 3.1394575
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike42" unique_id=1904820348]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike42" unique_id=1577294080]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile21" type="StaticBody2D" parent="." unique_id=726920829]
+position = Vector2(10, -938)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile21" unique_id=419192423]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile21" unique_id=1612485473]
+texture = ExtResource("4_iywne")
+
+[node name="spike44" type="Area2D" parent="." unique_id=246784610]
+position = Vector2(30, -918)
+rotation = 3.1394575
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike44" unique_id=1385164037]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike44" unique_id=1499267068]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile22" type="StaticBody2D" parent="." unique_id=564110699]
+position = Vector2(30, -938)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile22" unique_id=1139822920]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile22" unique_id=1199250111]
+texture = ExtResource("4_iywne")
+
+[node name="spike34" type="Area2D" parent="." unique_id=1849271906]
+position = Vector2(54, -810)
+rotation = 3.1394575
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike34" unique_id=739998935]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike34" unique_id=1699148242]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile18" type="StaticBody2D" parent="." unique_id=2104917900]
+position = Vector2(54, -830)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile18" unique_id=1563614310]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile18" unique_id=1093025774]
+texture = ExtResource("4_iywne")
+
+[node name="spike43" type="Area2D" parent="." unique_id=343712355]
+position = Vector2(-52, -812)
+rotation = 3.1394575
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike43" unique_id=924005590]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike43" unique_id=914558281]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile19" type="StaticBody2D" parent="." unique_id=543158142]
+position = Vector2(-52, -832)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile19" unique_id=1313222507]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile19" unique_id=18855323]
+texture = ExtResource("4_iywne")
+
 [node name="spike7" type="Area2D" parent="." unique_id=1636781677]
 position = Vector2(1.0000019, -407)
 rotation = -0.002688284
@@ -724,6 +873,324 @@ shape = SubResource("CircleShape2D_5s0fj")
 rotation = 3.1415927
 texture = ExtResource("2_lnu2h")
 
+[node name="tile23" type="StaticBody2D" parent="." unique_id=161439015]
+position = Vector2(-10, -617)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile23" unique_id=1264351980]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile23" unique_id=2097813852]
+texture = ExtResource("4_iywne")
+
+[node name="spike23" type="Area2D" parent="." unique_id=155188934]
+position = Vector2(-10.000002, -637)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike23" unique_id=674649369]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike23" unique_id=2087070891]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile24" type="StaticBody2D" parent="." unique_id=375575552]
+position = Vector2(10, -617)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile24" unique_id=1237847716]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile24" unique_id=2069079315]
+texture = ExtResource("4_iywne")
+
+[node name="spike24" type="Area2D" parent="." unique_id=64918675]
+position = Vector2(10.000002, -637)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike24" unique_id=1243182464]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike24" unique_id=2113273494]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile25" type="StaticBody2D" parent="." unique_id=686057613]
+position = Vector2(-9.999998, -778)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile25" unique_id=1732405372]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile25" unique_id=1094909879]
+texture = ExtResource("4_iywne")
+
+[node name="spike26" type="Area2D" parent="." unique_id=1029525813]
+position = Vector2(-10, -798)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike26" unique_id=21261581]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike26" unique_id=1985016226]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile26" type="StaticBody2D" parent="." unique_id=1166544373]
+position = Vector2(10.000002, -778)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile26" unique_id=469895354]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile26" unique_id=677078379]
+texture = ExtResource("4_iywne")
+
+[node name="spike27" type="Area2D" parent="." unique_id=1444520118]
+position = Vector2(10.000004, -798)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike27" unique_id=133541287]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike27" unique_id=965267351]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile27" type="StaticBody2D" parent="." unique_id=819615761]
+position = Vector2(-9.999998, -778)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile27" unique_id=1254437607]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile27" unique_id=362650648]
+texture = ExtResource("4_iywne")
+
+[node name="spike28" type="Area2D" parent="." unique_id=683710916]
+position = Vector2(-10, -798)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike28" unique_id=1789422899]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike28" unique_id=1583493810]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile28" type="StaticBody2D" parent="." unique_id=821922898]
+position = Vector2(10.000002, -778)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile28" unique_id=1820644488]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile28" unique_id=1876036766]
+texture = ExtResource("4_iywne")
+
+[node name="spike29" type="Area2D" parent="." unique_id=400369799]
+position = Vector2(10.000004, -798)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike29" unique_id=485645901]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike29" unique_id=750817799]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile33" type="StaticBody2D" parent="." unique_id=1341380509]
+position = Vector2(-9.999999, -862)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile33" unique_id=1243355709]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile33" unique_id=1435170318]
+texture = ExtResource("4_iywne")
+
+[node name="spike37" type="Area2D" parent="." unique_id=1473790792]
+position = Vector2(-10.000001, -882)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike37" unique_id=973065439]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike37" unique_id=68587605]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile34" type="StaticBody2D" parent="." unique_id=1228739436]
+position = Vector2(10.000001, -862)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile34" unique_id=700217739]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile34" unique_id=1321844864]
+texture = ExtResource("4_iywne")
+
+[node name="spike38" type="Area2D" parent="." unique_id=1615654488]
+position = Vector2(10.000002, -882)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike38" unique_id=1688877066]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike38" unique_id=1485660693]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile35" type="StaticBody2D" parent="." unique_id=1576471649]
+position = Vector2(-9.999999, -862)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile35" unique_id=659779711]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile35" unique_id=1100626712]
+texture = ExtResource("4_iywne")
+
+[node name="spike39" type="Area2D" parent="." unique_id=45581167]
+position = Vector2(-10.000001, -882)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike39" unique_id=1329553264]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike39" unique_id=1863888526]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile36" type="StaticBody2D" parent="." unique_id=2087143875]
+position = Vector2(10.000001, -862)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile36" unique_id=871714179]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile36" unique_id=1961593317]
+texture = ExtResource("4_iywne")
+
+[node name="spike40" type="Area2D" parent="." unique_id=578365445]
+position = Vector2(10.000002, -882)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike40" unique_id=90427946]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike40" unique_id=1497893371]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="spike35" type="Area2D" parent="." unique_id=318088133]
+position = Vector2(54.000004, -850)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike35" unique_id=912492420]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike35" unique_id=854924906]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="spike36" type="Area2D" parent="." unique_id=713368618]
+position = Vector2(54.000004, -850)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike36" unique_id=1041895252]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike36" unique_id=2089772039]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile29" type="StaticBody2D" parent="." unique_id=830413577]
+position = Vector2(70, -751)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile29" unique_id=1560939916]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile29" unique_id=136573729]
+texture = ExtResource("4_iywne")
+
+[node name="spike30" type="Area2D" parent="." unique_id=1658829595]
+position = Vector2(70.00001, -771)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike30" unique_id=1151480927]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike30" unique_id=1389359767]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile30" type="StaticBody2D" parent="." unique_id=2082190802]
+position = Vector2(90, -751)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile30" unique_id=1023613153]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile30" unique_id=155375420]
+texture = ExtResource("4_iywne")
+
+[node name="spike31" type="Area2D" parent="." unique_id=149960926]
+position = Vector2(90.000015, -771)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike31" unique_id=205258090]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike31" unique_id=1230277594]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile31" type="StaticBody2D" parent="." unique_id=1826173055]
+position = Vector2(70, -751)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile31" unique_id=1819801865]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile31" unique_id=421054545]
+texture = ExtResource("4_iywne")
+
+[node name="spike32" type="Area2D" parent="." unique_id=1205624786]
+position = Vector2(70.00001, -771)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike32" unique_id=1131377828]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike32" unique_id=1119485098]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
+[node name="tile32" type="StaticBody2D" parent="." unique_id=1201902789]
+position = Vector2(90, -751)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile32" unique_id=1407095635]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile32" unique_id=393730723]
+texture = ExtResource("4_iywne")
+
+[node name="spike33" type="Area2D" parent="." unique_id=460917554]
+position = Vector2(90.000015, -771)
+rotation = -0.002688284
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spike33" unique_id=2009723566]
+z_index = 2
+shape = SubResource("CircleShape2D_5s0fj")
+
+[node name="Sprite2D" type="Sprite2D" parent="spike33" unique_id=693115958]
+rotation = 3.1415927
+texture = ExtResource("2_lnu2h")
+
 [node name="spike16" type="Area2D" parent="." unique_id=1822322001]
 position = Vector2(30.000002, -637)
 rotation = -0.002688284
@@ -737,7 +1204,7 @@ rotation = 3.1415927
 texture = ExtResource("2_lnu2h")
 
 [node name="tile7" type="StaticBody2D" parent="." unique_id=611406773]
-position = Vector2(-19, -387)
+position = Vector2(-17, -387)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tile7" unique_id=299152667]
 shape = SubResource("RectangleShape2D_yf5fn")
@@ -756,10 +1223,11 @@ shape = SubResource("RectangleShape2D_yf5fn")
 texture = ExtResource("4_iywne")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=199591277]
-tile_map_data = PackedByteArray("AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAD+/wAAAAAAAAAAAAD9/wAAAAAAAAAAAAD8/wAAAAAAAAAAAAD7/wAAAAAAAAAAAAD6/wAAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAD5/wAAAAAAAAAAAAD4/wAAAAAAAAAAAAD3/wAAAAAAAAAAAAD5/9b/AgAAAAAAAAD5/9f/AgAAAAAAAAD5/9j/AgAAAAAAAAD5/9n/AgAAAAAAAAD5/9r/AgAAAAAAAAD5/9v/AgAAAAAAAAD5/9z/AgAAAAAAAAD5/93/AgAAAAAAAAD5/97/AgAAAAAAAAD5/9//AgAAAAAAAAD5/+D/AgAAAAAAAAD5/+H/AgAAAAAAAAD5/+L/AgAAAAAAAAD5/+P/AgAAAAAAAAD5/+T/AgAAAAAAAAD5/+X/AgAAAAAAAAD5/+b/AgAAAAAAAAD5/+f/AgAAAAAAAAD5/+j/AgAAAAAAAAD5/+n/AgAAAAAAAAD5/+r/AgAAAAAAAAD5/+v/AgAAAAAAAAD5/+z/AgAAAAAAAAD5/+3/AgAAAAAAAAD5/+7/AgAAAAAAAAD5/+//AgAAAAAAAAD5//D/AgAAAAAAAAD5//H/AgAAAAAAAAD5//L/AgAAAAAAAAD5//P/AgAAAAAAAAD5//T/AgAAAAAAAAD5//X/AgAAAAAAAAD5//b/AgAAAAAAAAD5//f/AgAAAAAAAAD5//j/AgAAAAAAAAD5//n/AgAAAAAAAAD5//r/AgAAAAAAAAD5//v/AgAAAAAAAAD5//z/AgAAAAAAAAD5//3/AgAAAAAAAAD5//7/AgAAAAAAAAD5////AgAAAAAAAAD6/9b/AgAAAAAAAAD6/9f/AgAAAAAAAAD6/9j/AgAAAAAAAAD6/9n/AgAAAAAAAAD6/9r/AgAAAAAAAAD6/9v/AgAAAAAAAAD6/9z/AgAAAAAAAAD6/93/AgAAAAAAAAD6/97/AgAAAAAAAAD6/9//AgAAAAAAAAD6/+D/AgAAAAAAAAD6/+H/AgAAAAAAAAD6/+L/AgAAAAAAAAD6/+P/AgAAAAAAAAD6/+T/AgAAAAAAAAD6/+X/AgAAAAAAAAD6/+b/AgAAAAAAAAD6/+f/AgAAAAAAAAD6/+j/AgAAAAAAAAD6/+n/AgAAAAAAAAD6/+r/AgAAAAAAAAD6/+v/AgAAAAAAAAD6/+z/AgAAAAAAAAD6/+3/AgAAAAAAAAD6/+7/AgAAAAAAAAD6/+//AgAAAAAAAAD6//D/AgAAAAAAAAD6//H/AgAAAAAAAAD6//L/AgAAAAAAAAD6//P/AgAAAAAAAAD6//T/AgAAAAAAAAD6//X/AgAAAAAAAAD6//b/AgAAAAAAAAD6//f/AgAAAAAAAAD6//j/AgAAAAAAAAD6//n/AgAAAAAAAAD6//r/AgAAAAAAAAD6//v/AgAAAAAAAAD6//z/AgAAAAAAAAD6//3/AgAAAAAAAAD6//7/AgAAAAAAAAD6////AgAAAAAAAAAFANb/AgAAAAAAAAAFANf/AgAAAAAAAAAFANj/AgAAAAAAAAAFANn/AgAAAAAAAAAFANr/AgAAAAAAAAAFANv/AgAAAAAAAAAFANz/AgAAAAAAAAAFAN3/AgAAAAAAAAAFAN7/AgAAAAAAAAAFAN//AgAAAAAAAAAFAOD/AgAAAAAAAAAFAOH/AgAAAAAAAAAFAOL/AgAAAAAAAAAFAOP/AgAAAAAAAAAFAOT/AgAAAAAAAAAFAOX/AgAAAAAAAAAFAOb/AgAAAAAAAAAFAOf/AgAAAAAAAAAFAOj/AgAAAAAAAAAFAOn/AgAAAAAAAAAFAOr/AgAAAAAAAAAFAOv/AgAAAAAAAAAFAOz/AgAAAAAAAAAFAO3/AgAAAAAAAAAFAO7/AgAAAAAAAAAFAO//AgAAAAAAAAAFAPD/AgAAAAAAAAAFAPH/AgAAAAAAAAAFAPL/AgAAAAAAAAAFAPP/AgAAAAAAAAAFAPT/AgAAAAAAAAAFAPX/AgAAAAAAAAAFAPb/AgAAAAAAAAAFAPf/AgAAAAAAAAAFAPj/AgAAAAAAAAAFAPn/AgAAAAAAAAAFAPr/AgAAAAAAAAAFAPv/AgAAAAAAAAAFAPz/AgAAAAAAAAAFAP3/AgAAAAAAAAAFAP7/AgAAAAAAAAAFAP//AgAAAAAAAAAGANb/AgAAAAAAAAAGANf/AgAAAAAAAAAGANj/AgAAAAAAAAAGANn/AgAAAAAAAAAGANr/AgAAAAAAAAAGANv/AgAAAAAAAAAGANz/AgAAAAAAAAAGAN3/AgAAAAAAAAAGAN7/AgAAAAAAAAAGAN//AgAAAAAAAAAGAOD/AgAAAAAAAAAGAOH/AgAAAAAAAAAGAOL/AgAAAAAAAAAGAOP/AgAAAAAAAAAGAOT/AgAAAAAAAAAGAOX/AgAAAAAAAAAGAOb/AgAAAAAAAAAGAOf/AgAAAAAAAAAGAOj/AgAAAAAAAAAGAOn/AgAAAAAAAAAGAOr/AgAAAAAAAAAGAOv/AgAAAAAAAAAGAOz/AgAAAAAAAAAGAO3/AgAAAAAAAAAGAO7/AgAAAAAAAAAGAO//AgAAAAAAAAAGAPD/AgAAAAAAAAAGAPH/AgAAAAAAAAAGAPL/AgAAAAAAAAAGAPP/AgAAAAAAAAAGAPT/AgAAAAAAAAAGAPX/AgAAAAAAAAAGAPb/AgAAAAAAAAAGAPf/AgAAAAAAAAAGAPj/AgAAAAAAAAAGAPn/AgAAAAAAAAAGAPr/AgAAAAAAAAAGAPv/AgAAAAAAAAAGAPz/AgAAAAAAAAAGAP3/AgAAAAAAAAAGAP7/AgAAAAAAAAAGAP//AgAAAAAAAAD3/wEAAQAAAAAAAAD4/wEAAQAAAAAAAAD5/wEAAQAAAAAAAAD6/wEAAQAAAAAAAAD7/wEAAQAAAAAAAAD8/wEAAQAAAAAAAAD9/wEAAQAAAAAAAAD+/wEAAQAAAAAAAAD//wEAAQAAAAAAAAAAAAEAAQAAAAAAAAABAAEAAQAAAAAAAAACAAEAAQAAAAAAAAADAAEAAQAAAAAAAAAEAAEAAQAAAAAAAAAFAAEAAQAAAAAAAAAGAAEAAQAAAAAAAAAHAAEAAQAAAAAAAAAIAAEAAQAAAAAAAAD8//z/BAAAAAAAAAD9//z/BAAAAAAAAAABAPX/BAAAAAAAAAACAPX/BAAAAAAAAAD9//D/BAAAAAAAAAACAOr/BAAAAAAAAAADAOr/BAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAD+/wAAAAAAAAAAAAD9/wAAAAAAAAAAAAD8/wAAAAAAAAAAAAD7/wAAAAAAAAAAAAD6/wAAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAD5/wAAAAAAAAAAAAD4/wAAAAAAAAAAAAD3/wAAAAAAAAAAAAD5/9b/AgAAAAAAAAD5/9f/AgAAAAAAAAD5/9j/AgAAAAAAAAD5/9n/AgAAAAAAAAD5/9r/AgAAAAAAAAD5/9v/AgAAAAAAAAD5/9z/AgAAAAAAAAD5/93/AgAAAAAAAAD5/97/AgAAAAAAAAD5/9//AgAAAAAAAAD5/+D/AgAAAAAAAAD5/+H/AgAAAAAAAAD5/+L/AgAAAAAAAAD5/+P/AgAAAAAAAAD5/+T/AgAAAAAAAAD5/+X/AgAAAAAAAAD5/+b/AgAAAAAAAAD5/+f/AgAAAAAAAAD5/+j/AgAAAAAAAAD5/+n/AgAAAAAAAAD5/+r/AgAAAAAAAAD5/+v/AgAAAAAAAAD5/+z/AgAAAAAAAAD5/+3/AgAAAAAAAAD5/+7/AgAAAAAAAAD5/+//AgAAAAAAAAD5//D/AgAAAAAAAAD5//H/AgAAAAAAAAD5//L/AgAAAAAAAAD5//P/AgAAAAAAAAD5//T/AgAAAAAAAAD5//X/AgAAAAAAAAD5//b/AgAAAAAAAAD5//f/AgAAAAAAAAD5//j/AgAAAAAAAAD5//n/AgAAAAAAAAD5//r/AgAAAAAAAAD5//v/AgAAAAAAAAD5//z/AgAAAAAAAAD5//3/AgAAAAAAAAD5//7/AgAAAAAAAAD5////AgAAAAAAAAD6/9b/AgAAAAAAAAD6/9f/AgAAAAAAAAD6/9j/AgAAAAAAAAD6/9n/AgAAAAAAAAD6/9r/AgAAAAAAAAD6/9v/AgAAAAAAAAD6/9z/AgAAAAAAAAD6/93/AgAAAAAAAAD6/97/AgAAAAAAAAD6/9//AgAAAAAAAAD6/+D/AgAAAAAAAAD6/+H/AgAAAAAAAAD6/+L/AgAAAAAAAAD6/+P/AgAAAAAAAAD6/+T/AgAAAAAAAAD6/+X/AgAAAAAAAAD6/+b/AgAAAAAAAAD6/+f/AgAAAAAAAAD6/+j/AgAAAAAAAAD6/+n/AgAAAAAAAAD6/+r/AgAAAAAAAAD6/+v/AgAAAAAAAAD6/+z/AgAAAAAAAAD6/+3/AgAAAAAAAAD6/+7/AgAAAAAAAAD6/+//AgAAAAAAAAD6//D/AgAAAAAAAAD6//H/AgAAAAAAAAD6//L/AgAAAAAAAAD6//P/AgAAAAAAAAD6//T/AgAAAAAAAAD6//X/AgAAAAAAAAD6//b/AgAAAAAAAAD6//f/AgAAAAAAAAD6//j/AgAAAAAAAAD6//n/AgAAAAAAAAD6//r/AgAAAAAAAAD6//v/AgAAAAAAAAD6//z/AgAAAAAAAAD6//3/AgAAAAAAAAD6//7/AgAAAAAAAAD6////AgAAAAAAAAAFANb/AgAAAAAAAAAFANf/AgAAAAAAAAAFANj/AgAAAAAAAAAFANn/AgAAAAAAAAAFANr/AgAAAAAAAAAFANv/AgAAAAAAAAAFANz/AgAAAAAAAAAFAN3/AgAAAAAAAAAFAN7/AgAAAAAAAAAFAN//AgAAAAAAAAAFAOD/AgAAAAAAAAAFAOH/AgAAAAAAAAAFAOL/AgAAAAAAAAAFAOP/AgAAAAAAAAAFAOT/AgAAAAAAAAAFAOX/AgAAAAAAAAAFAOb/AgAAAAAAAAAFAOf/AgAAAAAAAAAFAOj/AgAAAAAAAAAFAOn/AgAAAAAAAAAFAOr/AgAAAAAAAAAFAOv/AgAAAAAAAAAFAOz/AgAAAAAAAAAFAO3/AgAAAAAAAAAFAO7/AgAAAAAAAAAFAO//AgAAAAAAAAAFAPD/AgAAAAAAAAAFAPH/AgAAAAAAAAAFAPL/AgAAAAAAAAAFAPP/AgAAAAAAAAAFAPT/AgAAAAAAAAAFAPX/AgAAAAAAAAAFAPb/AgAAAAAAAAAFAPf/AgAAAAAAAAAFAPj/AgAAAAAAAAAFAPn/AgAAAAAAAAAFAPr/AgAAAAAAAAAFAPv/AgAAAAAAAAAFAPz/AgAAAAAAAAAFAP3/AgAAAAAAAAAFAP7/AgAAAAAAAAAFAP//AgAAAAAAAAAGANb/AgAAAAAAAAAGANf/AgAAAAAAAAAGANj/AgAAAAAAAAAGANn/AgAAAAAAAAAGANr/AgAAAAAAAAAGANv/AgAAAAAAAAAGANz/AgAAAAAAAAAGAN3/AgAAAAAAAAAGAN7/AgAAAAAAAAAGAN//AgAAAAAAAAAGAOD/AgAAAAAAAAAGAOH/AgAAAAAAAAAGAOL/AgAAAAAAAAAGAOP/AgAAAAAAAAAGAOT/AgAAAAAAAAAGAOX/AgAAAAAAAAAGAOb/AgAAAAAAAAAGAOf/AgAAAAAAAAAGAOj/AgAAAAAAAAAGAOn/AgAAAAAAAAAGAOr/AgAAAAAAAAAGAOv/AgAAAAAAAAAGAOz/AgAAAAAAAAAGAO3/AgAAAAAAAAAGAO7/AgAAAAAAAAAGAO//AgAAAAAAAAAGAPD/AgAAAAAAAAAGAPH/AgAAAAAAAAAGAPL/AgAAAAAAAAAGAPP/AgAAAAAAAAAGAPT/AgAAAAAAAAAGAPX/AgAAAAAAAAAGAPb/AgAAAAAAAAAGAPf/AgAAAAAAAAAGAPj/AgAAAAAAAAAGAPn/AgAAAAAAAAAGAPr/AgAAAAAAAAAGAPv/AgAAAAAAAAAGAPz/AgAAAAAAAAAGAP3/AgAAAAAAAAAGAP7/AgAAAAAAAAAGAP//AgAAAAAAAAD3/wEAAQAAAAAAAAD4/wEAAQAAAAAAAAD5/wEAAQAAAAAAAAD6/wEAAQAAAAAAAAD7/wEAAQAAAAAAAAD8/wEAAQAAAAAAAAD9/wEAAQAAAAAAAAD+/wEAAQAAAAAAAAD//wEAAQAAAAAAAAAAAAEAAQAAAAAAAAABAAEAAQAAAAAAAAACAAEAAQAAAAAAAAADAAEAAQAAAAAAAAAEAAEAAQAAAAAAAAAFAAEAAQAAAAAAAAAGAAEAAQAAAAAAAAAHAAEAAQAAAAAAAAAIAAEAAQAAAAAAAAD8//z/BAAAAAAAAAD9//z/BAAAAAAAAAABAPX/BAAAAAAAAAACAPX/BAAAAAAAAAD9//D/BAAAAAAAAAACAOr/BAAAAAAAAAADAOr/BAAAAAAAAAD5/9X/AgAAAAAAAAD5/9T/AgAAAAAAAAD5/9P/AgAAAAAAAAD5/9L/AgAAAAAAAAD6/9X/AgAAAAAAAAD6/9T/AgAAAAAAAAD6/9P/AgAAAAAAAAD6/9L/AgAAAAAAAAD5/6z/AgAAAAAAAAD5/63/AgAAAAAAAAD5/67/AgAAAAAAAAD5/6//AgAAAAAAAAD5/7D/AgAAAAAAAAD5/7H/AgAAAAAAAAD5/7L/AgAAAAAAAAD5/7P/AgAAAAAAAAD5/7T/AgAAAAAAAAD5/7X/AgAAAAAAAAD5/7b/AgAAAAAAAAD5/7f/AgAAAAAAAAD5/7j/AgAAAAAAAAD5/7n/AgAAAAAAAAD5/7r/AgAAAAAAAAD5/7v/AgAAAAAAAAD5/7z/AgAAAAAAAAD5/73/AgAAAAAAAAD5/77/AgAAAAAAAAD5/7//AgAAAAAAAAD5/8D/AgAAAAAAAAD5/8H/AgAAAAAAAAD5/8L/AgAAAAAAAAD5/8P/AgAAAAAAAAD5/8T/AgAAAAAAAAD5/8X/AgAAAAAAAAD5/8b/AgAAAAAAAAD5/8f/AgAAAAAAAAD5/8j/AgAAAAAAAAD5/8n/AgAAAAAAAAD5/8r/AgAAAAAAAAD5/8v/AgAAAAAAAAD5/8z/AgAAAAAAAAD5/83/AgAAAAAAAAD5/87/AgAAAAAAAAD5/8//AgAAAAAAAAD5/9D/AgAAAAAAAAD5/9H/AgAAAAAAAAD6/6z/AgAAAAAAAAD6/63/AgAAAAAAAAD6/67/AgAAAAAAAAD6/6//AgAAAAAAAAD6/7D/AgAAAAAAAAD6/7H/AgAAAAAAAAD6/7L/AgAAAAAAAAD6/7P/AgAAAAAAAAD6/7T/AgAAAAAAAAD6/7X/AgAAAAAAAAD6/7b/AgAAAAAAAAD6/7f/AgAAAAAAAAD6/7j/AgAAAAAAAAD6/7n/AgAAAAAAAAD6/7r/AgAAAAAAAAD6/7v/AgAAAAAAAAD6/7z/AgAAAAAAAAD6/73/AgAAAAAAAAD6/77/AgAAAAAAAAD6/7//AgAAAAAAAAD6/8D/AgAAAAAAAAD6/8H/AgAAAAAAAAD6/8L/AgAAAAAAAAD6/8P/AgAAAAAAAAD6/8T/AgAAAAAAAAD6/8X/AgAAAAAAAAD6/8b/AgAAAAAAAAD6/8f/AgAAAAAAAAD6/8j/AgAAAAAAAAD6/8n/AgAAAAAAAAD6/8r/AgAAAAAAAAD6/8v/AgAAAAAAAAD6/8z/AgAAAAAAAAD6/83/AgAAAAAAAAD6/87/AgAAAAAAAAD6/8//AgAAAAAAAAD6/9D/AgAAAAAAAAD6/9H/AgAAAAAAAAAFAKz/AgAAAAAAAAAFAK3/AgAAAAAAAAAFAK7/AgAAAAAAAAAFAK//AgAAAAAAAAAFALD/AgAAAAAAAAAFALH/AgAAAAAAAAAFALL/AgAAAAAAAAAFALP/AgAAAAAAAAAFALT/AgAAAAAAAAAFALX/AgAAAAAAAAAFALb/AgAAAAAAAAAFALf/AgAAAAAAAAAFALj/AgAAAAAAAAAFALn/AgAAAAAAAAAFALr/AgAAAAAAAAAFALv/AgAAAAAAAAAFALz/AgAAAAAAAAAFAL3/AgAAAAAAAAAFAL7/AgAAAAAAAAAFAL//AgAAAAAAAAAFAMD/AgAAAAAAAAAFAMH/AgAAAAAAAAAFAML/AgAAAAAAAAAFAMP/AgAAAAAAAAAFAMT/AgAAAAAAAAAFAMX/AgAAAAAAAAAFAMb/AgAAAAAAAAAFAMf/AgAAAAAAAAAFAMj/AgAAAAAAAAAFAMn/AgAAAAAAAAAFAMr/AgAAAAAAAAAFAMv/AgAAAAAAAAAFAMz/AgAAAAAAAAAFAM3/AgAAAAAAAAAFAM7/AgAAAAAAAAAFAM//AgAAAAAAAAAFAND/AgAAAAAAAAAFANH/AgAAAAAAAAAFANL/AgAAAAAAAAAFANP/AgAAAAAAAAAFANT/AgAAAAAAAAAFANX/AgAAAAAAAAAGAKz/AgAAAAAAAAAGAK3/AgAAAAAAAAAGAK7/AgAAAAAAAAAGAK//AgAAAAAAAAAGALD/AgAAAAAAAAAGALH/AgAAAAAAAAAGALL/AgAAAAAAAAAGALP/AgAAAAAAAAAGALT/AgAAAAAAAAAGALX/AgAAAAAAAAAGALb/AgAAAAAAAAAGALf/AgAAAAAAAAAGALj/AgAAAAAAAAAGALn/AgAAAAAAAAAGALr/AgAAAAAAAAAGALv/AgAAAAAAAAAGALz/AgAAAAAAAAAGAL3/AgAAAAAAAAAGAL7/AgAAAAAAAAAGAL//AgAAAAAAAAAGAMD/AgAAAAAAAAAGAMH/AgAAAAAAAAAGAML/AgAAAAAAAAAGAMP/AgAAAAAAAAAGAMT/AgAAAAAAAAAGAMX/AgAAAAAAAAAGAMb/AgAAAAAAAAAGAMf/AgAAAAAAAAAGAMj/AgAAAAAAAAAGAMn/AgAAAAAAAAAGAMr/AgAAAAAAAAAGAMv/AgAAAAAAAAAGAMz/AgAAAAAAAAAGAM3/AgAAAAAAAAAGAM7/AgAAAAAAAAAGAM//AgAAAAAAAAAGAND/AgAAAAAAAAAGANH/AgAAAAAAAAAGANL/AgAAAAAAAAAGANP/AgAAAAAAAAAGANT/AgAAAAAAAAAGANX/AgAAAAAAAAA=")
 tile_set = SubResource("TileSet_lbhrr")
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=762144516]
+visible = false
 z_index = -1
 tile_map_data = PackedByteArray("AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAD+/wAAAAAAAAAAAAD9/wAAAAAAAAAAAAD8/wAAAAAAAAAAAAD7/wAAAAAAAAAAAAD6/wAAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAD5/wAAAAAAAAAAAAD4/wAAAAAAAAAAAAD3/wAAAAAAAAAAAAD5/9b/AgAAAAAAAAD5/9f/AgAAAAAAAAD5/9j/AgAAAAAAAAD5/9n/AgAAAAAAAAD5/9r/AgAAAAAAAAD5/9v/AgAAAAAAAAD5/9z/AgAAAAAAAAD5/93/AgAAAAAAAAD5/97/AgAAAAAAAAD5/9//AgAAAAAAAAD5/+D/AgAAAAAAAAD5/+H/AgAAAAAAAAD5/+L/AgAAAAAAAAD5/+P/AgAAAAAAAAD5/+T/AgAAAAAAAAD5/+X/AgAAAAAAAAD5/+b/AgAAAAAAAAD5/+f/AgAAAAAAAAD5/+j/AgAAAAAAAAD5/+n/AgAAAAAAAAD5/+r/AgAAAAAAAAD5/+v/AgAAAAAAAAD5/+z/AgAAAAAAAAD5/+3/AgAAAAAAAAD5/+7/AgAAAAAAAAD5/+//AgAAAAAAAAD5//D/AgAAAAAAAAD5//H/AgAAAAAAAAD5//L/AgAAAAAAAAD5//P/AgAAAAAAAAD5//T/AgAAAAAAAAD5//X/AgAAAAAAAAD5//b/AgAAAAAAAAD5//f/AgAAAAAAAAD5//j/AgAAAAAAAAD5//n/AgAAAAAAAAD5//r/AgAAAAAAAAD5//v/AgAAAAAAAAD5//z/AgAAAAAAAAD5//3/AgAAAAAAAAD5//7/AgAAAAAAAAD5////AgAAAAAAAAD6/9b/AgAAAAAAAAD6/9f/AgAAAAAAAAD6/9j/AgAAAAAAAAD6/9n/AgAAAAAAAAD6/9r/AgAAAAAAAAD6/9v/AgAAAAAAAAD6/9z/AgAAAAAAAAD6/93/AgAAAAAAAAD6/97/AgAAAAAAAAD6/9//AgAAAAAAAAD6/+D/AgAAAAAAAAD6/+H/AgAAAAAAAAD6/+L/AgAAAAAAAAD6/+P/AgAAAAAAAAD6/+T/AgAAAAAAAAD6/+X/AgAAAAAAAAD6/+b/AgAAAAAAAAD6/+f/AgAAAAAAAAD6/+j/AgAAAAAAAAD6/+n/AgAAAAAAAAD6/+r/AgAAAAAAAAD6/+v/AgAAAAAAAAD6/+z/AgAAAAAAAAD6/+3/AgAAAAAAAAD6/+7/AgAAAAAAAAD6/+//AgAAAAAAAAD6//D/AgAAAAAAAAD6//H/AgAAAAAAAAD6//L/AgAAAAAAAAD6//P/AgAAAAAAAAD6//T/AgAAAAAAAAD6//X/AgAAAAAAAAD6//b/AgAAAAAAAAD6//f/AgAAAAAAAAD6//j/AgAAAAAAAAD6//n/AgAAAAAAAAD6//r/AgAAAAAAAAD6//v/AgAAAAAAAAD6//z/AgAAAAAAAAD6//3/AgAAAAAAAAD6//7/AgAAAAAAAAD6////AgAAAAAAAAAFANb/AgAAAAAAAAAFANf/AgAAAAAAAAAFANj/AgAAAAAAAAAFANn/AgAAAAAAAAAFANr/AgAAAAAAAAAFANv/AgAAAAAAAAAFANz/AgAAAAAAAAAFAN3/AgAAAAAAAAAFAN7/AgAAAAAAAAAFAN//AgAAAAAAAAAFAOD/AgAAAAAAAAAFAOH/AgAAAAAAAAAFAOL/AgAAAAAAAAAFAOP/AgAAAAAAAAAFAOT/AgAAAAAAAAAFAOX/AgAAAAAAAAAFAOb/AgAAAAAAAAAFAOf/AgAAAAAAAAAFAOj/AgAAAAAAAAAFAOn/AgAAAAAAAAAFAOr/AgAAAAAAAAAFAOv/AgAAAAAAAAAFAOz/AgAAAAAAAAAFAO3/AgAAAAAAAAAFAO7/AgAAAAAAAAAFAO//AgAAAAAAAAAFAPD/AgAAAAAAAAAFAPH/AgAAAAAAAAAFAPL/AgAAAAAAAAAFAPP/AgAAAAAAAAAFAPT/AgAAAAAAAAAFAPX/AgAAAAAAAAAFAPb/AgAAAAAAAAAFAPf/AgAAAAAAAAAFAPj/AgAAAAAAAAAFAPn/AgAAAAAAAAAFAPr/AgAAAAAAAAAFAPv/AgAAAAAAAAAFAPz/AgAAAAAAAAAFAP3/AgAAAAAAAAAFAP7/AgAAAAAAAAAFAP//AgAAAAAAAAAGANb/AgAAAAAAAAAGANf/AgAAAAAAAAAGANj/AgAAAAAAAAAGANn/AgAAAAAAAAAGANr/AgAAAAAAAAAGANv/AgAAAAAAAAAGANz/AgAAAAAAAAAGAN3/AgAAAAAAAAAGAN7/AgAAAAAAAAAGAN//AgAAAAAAAAAGAOD/AgAAAAAAAAAGAOH/AgAAAAAAAAAGAOL/AgAAAAAAAAAGAOP/AgAAAAAAAAAGAOT/AgAAAAAAAAAGAOX/AgAAAAAAAAAGAOb/AgAAAAAAAAAGAOf/AgAAAAAAAAAGAOj/AgAAAAAAAAAGAOn/AgAAAAAAAAAGAOr/AgAAAAAAAAAGAOv/AgAAAAAAAAAGAOz/AgAAAAAAAAAGAO3/AgAAAAAAAAAGAO7/AgAAAAAAAAAGAO//AgAAAAAAAAAGAPD/AgAAAAAAAAAGAPH/AgAAAAAAAAAGAPL/AgAAAAAAAAAGAPP/AgAAAAAAAAAGAPT/AgAAAAAAAAAGAPX/AgAAAAAAAAAGAPb/AgAAAAAAAAAGAPf/AgAAAAAAAAAGAPj/AgAAAAAAAAAGAPn/AgAAAAAAAAAGAPr/AgAAAAAAAAAGAPv/AgAAAAAAAAAGAPz/AgAAAAAAAAAGAP3/AgAAAAAAAAAGAP7/AgAAAAAAAAAGAP//AgAAAAAAAAD3/wEAAQAAAAAAAAD4/wEAAQAAAAAAAAD5/wEAAQAAAAAAAAD6/wEAAQAAAAAAAAD7/wEAAQAAAAAAAAD8/wEAAQAAAAAAAAD9/wEAAQAAAAAAAAD+/wEAAQAAAAAAAAD//wEAAQAAAAAAAAAAAAEAAQAAAAAAAAABAAEAAQAAAAAAAAACAAEAAQAAAAAAAAADAAEAAQAAAAAAAAAEAAEAAQAAAAAAAAAFAAEAAQAAAAAAAAAGAAEAAQAAAAAAAAAHAAEAAQAAAAAAAAAIAAEAAQAAAAAAAAD7/9b/AwAAAAAAAAD7/9f/AwAAAAAAAAD7/9j/AwAAAAAAAAD7/9n/AwAAAAAAAAD7/9r/AwAAAAAAAAD7/9v/AwAAAAAAAAD7/9z/AwAAAAAAAAD7/93/AwAAAAAAAAD7/97/AwAAAAAAAAD7/9//AwAAAAAAAAD7/+D/AwAAAAAAAAD7/+H/AwAAAAAAAAD7/+L/AwAAAAAAAAD7/+P/AwAAAAAAAAD7/+T/AwAAAAAAAAD7/+X/AwAAAAAAAAD7/+b/AwAAAAAAAAD7/+f/AwAAAAAAAAD7/+j/AwAAAAAAAAD7/+n/AwAAAAAAAAD7/+r/AwAAAAAAAAD7/+v/AwAAAAAAAAD7/+z/AwAAAAAAAAD7/+3/AwAAAAAAAAD7/+7/AwAAAAAAAAD7/+//AwAAAAAAAAD7//D/AwAAAAAAAAD7//H/AwAAAAAAAAD7//L/AwAAAAAAAAD7//P/AwAAAAAAAAD7//T/AwAAAAAAAAD7//X/AwAAAAAAAAD7//b/AwAAAAAAAAD7//f/AwAAAAAAAAD7//j/AwAAAAAAAAD7//n/AwAAAAAAAAD7//r/AwAAAAAAAAD7//v/AwAAAAAAAAD7//z/AwAAAAAAAAD7//3/AwAAAAAAAAD7//7/AwAAAAAAAAD7////AwAAAAAAAAD8/9b/AwAAAAAAAAD8/9f/AwAAAAAAAAD8/9j/AwAAAAAAAAD8/9n/AwAAAAAAAAD8/9r/AwAAAAAAAAD8/9v/AwAAAAAAAAD8/9z/AwAAAAAAAAD8/93/AwAAAAAAAAD8/97/AwAAAAAAAAD8/9//AwAAAAAAAAD8/+D/AwAAAAAAAAD8/+H/AwAAAAAAAAD8/+L/AwAAAAAAAAD8/+P/AwAAAAAAAAD8/+T/AwAAAAAAAAD8/+X/AwAAAAAAAAD8/+b/AwAAAAAAAAD8/+f/AwAAAAAAAAD8/+j/AwAAAAAAAAD8/+n/AwAAAAAAAAD8/+r/AwAAAAAAAAD8/+v/AwAAAAAAAAD8/+z/AwAAAAAAAAD8/+3/AwAAAAAAAAD8/+7/AwAAAAAAAAD8/+//AwAAAAAAAAD8//D/AwAAAAAAAAD8//H/AwAAAAAAAAD8//L/AwAAAAAAAAD8//P/AwAAAAAAAAD8//T/AwAAAAAAAAD8//X/AwAAAAAAAAD8//b/AwAAAAAAAAD8//f/AwAAAAAAAAD8//j/AwAAAAAAAAD8//n/AwAAAAAAAAD8//r/AwAAAAAAAAD8//v/AwAAAAAAAAD8//z/AwAAAAAAAAD8//3/AwAAAAAAAAD8//7/AwAAAAAAAAD8////AwAAAAAAAAD9/9b/AwAAAAAAAAD9/9f/AwAAAAAAAAD9/9j/AwAAAAAAAAD9/9n/AwAAAAAAAAD9/9r/AwAAAAAAAAD9/9v/AwAAAAAAAAD9/9z/AwAAAAAAAAD9/93/AwAAAAAAAAD9/97/AwAAAAAAAAD9/9//AwAAAAAAAAD9/+D/AwAAAAAAAAD9/+H/AwAAAAAAAAD9/+L/AwAAAAAAAAD9/+P/AwAAAAAAAAD9/+T/AwAAAAAAAAD9/+X/AwAAAAAAAAD9/+b/AwAAAAAAAAD9/+f/AwAAAAAAAAD9/+j/AwAAAAAAAAD9/+n/AwAAAAAAAAD9/+r/AwAAAAAAAAD9/+v/AwAAAAAAAAD9/+z/AwAAAAAAAAD9/+3/AwAAAAAAAAD9/+7/AwAAAAAAAAD9/+//AwAAAAAAAAD9//D/AwAAAAAAAAD9//H/AwAAAAAAAAD9//L/AwAAAAAAAAD9//P/AwAAAAAAAAD9//T/AwAAAAAAAAD9//X/AwAAAAAAAAD9//b/AwAAAAAAAAD9//f/AwAAAAAAAAD9//j/AwAAAAAAAAD9//n/AwAAAAAAAAD9//r/AwAAAAAAAAD9//v/AwAAAAAAAAD9//z/AwAAAAAAAAD9//3/AwAAAAAAAAD9//7/AwAAAAAAAAD9////AwAAAAAAAAD+/9b/AwAAAAAAAAD+/9f/AwAAAAAAAAD+/9j/AwAAAAAAAAD+/9n/AwAAAAAAAAD+/9r/AwAAAAAAAAD+/9v/AwAAAAAAAAD+/9z/AwAAAAAAAAD+/93/AwAAAAAAAAD+/97/AwAAAAAAAAD+/9//AwAAAAAAAAD+/+D/AwAAAAAAAAD+/+H/AwAAAAAAAAD+/+L/AwAAAAAAAAD+/+P/AwAAAAAAAAD+/+T/AwAAAAAAAAD+/+X/AwAAAAAAAAD+/+b/AwAAAAAAAAD+/+f/AwAAAAAAAAD+/+j/AwAAAAAAAAD+/+n/AwAAAAAAAAD+/+r/AwAAAAAAAAD+/+v/AwAAAAAAAAD+/+z/AwAAAAAAAAD+/+3/AwAAAAAAAAD+/+7/AwAAAAAAAAD+/+//AwAAAAAAAAD+//D/AwAAAAAAAAD+//H/AwAAAAAAAAD+//L/AwAAAAAAAAD+//P/AwAAAAAAAAD+//T/AwAAAAAAAAD+//X/AwAAAAAAAAD+//b/AwAAAAAAAAD+//f/AwAAAAAAAAD+//j/AwAAAAAAAAD+//n/AwAAAAAAAAD+//r/AwAAAAAAAAD+//v/AwAAAAAAAAD+//z/AwAAAAAAAAD+//3/AwAAAAAAAAD+//7/AwAAAAAAAAD+////AwAAAAAAAAD//9b/AwAAAAAAAAD//9f/AwAAAAAAAAD//9j/AwAAAAAAAAD//9n/AwAAAAAAAAD//9r/AwAAAAAAAAD//9v/AwAAAAAAAAD//9z/AwAAAAAAAAD//93/AwAAAAAAAAD//97/AwAAAAAAAAD//9//AwAAAAAAAAD//+D/AwAAAAAAAAD//+H/AwAAAAAAAAD//+L/AwAAAAAAAAD//+P/AwAAAAAAAAD//+T/AwAAAAAAAAD//+X/AwAAAAAAAAD//+b/AwAAAAAAAAD//+f/AwAAAAAAAAD//+j/AwAAAAAAAAD//+n/AwAAAAAAAAD//+r/AwAAAAAAAAD//+v/AwAAAAAAAAD//+z/AwAAAAAAAAD//+3/AwAAAAAAAAD//+7/AwAAAAAAAAD//+//AwAAAAAAAAD///D/AwAAAAAAAAD///H/AwAAAAAAAAD///L/AwAAAAAAAAD///P/AwAAAAAAAAD///T/AwAAAAAAAAD///X/AwAAAAAAAAD///b/AwAAAAAAAAD///f/AwAAAAAAAAD///j/AwAAAAAAAAD///n/AwAAAAAAAAD///r/AwAAAAAAAAD///v/AwAAAAAAAAD///z/AwAAAAAAAAD///3/AwAAAAAAAAD///7/AwAAAAAAAAD/////AwAAAAAAAAAAANb/AwAAAAAAAAAAANf/AwAAAAAAAAAAANj/AwAAAAAAAAAAANn/AwAAAAAAAAAAANr/AwAAAAAAAAAAANv/AwAAAAAAAAAAANz/AwAAAAAAAAAAAN3/AwAAAAAAAAAAAN7/AwAAAAAAAAAAAN//AwAAAAAAAAAAAOD/AwAAAAAAAAAAAOH/AwAAAAAAAAAAAOL/AwAAAAAAAAAAAOP/AwAAAAAAAAAAAOT/AwAAAAAAAAAAAOX/AwAAAAAAAAAAAOb/AwAAAAAAAAAAAOf/AwAAAAAAAAAAAOj/AwAAAAAAAAAAAOn/AwAAAAAAAAAAAOr/AwAAAAAAAAAAAOv/AwAAAAAAAAAAAOz/AwAAAAAAAAAAAO3/AwAAAAAAAAAAAO7/AwAAAAAAAAAAAO//AwAAAAAAAAAAAPD/AwAAAAAAAAAAAPH/AwAAAAAAAAAAAPL/AwAAAAAAAAAAAPP/AwAAAAAAAAAAAPT/AwAAAAAAAAAAAPX/AwAAAAAAAAAAAPb/AwAAAAAAAAAAAPf/AwAAAAAAAAAAAPj/AwAAAAAAAAAAAPn/AwAAAAAAAAAAAPr/AwAAAAAAAAAAAPv/AwAAAAAAAAAAAPz/AwAAAAAAAAAAAP3/AwAAAAAAAAAAAP7/AwAAAAAAAAAAAP//AwAAAAAAAAABANb/AwAAAAAAAAABANf/AwAAAAAAAAABANj/AwAAAAAAAAABANn/AwAAAAAAAAABANr/AwAAAAAAAAABANv/AwAAAAAAAAABANz/AwAAAAAAAAABAN3/AwAAAAAAAAABAN7/AwAAAAAAAAABAN//AwAAAAAAAAABAOD/AwAAAAAAAAABAOH/AwAAAAAAAAABAOL/AwAAAAAAAAABAOP/AwAAAAAAAAABAOT/AwAAAAAAAAABAOX/AwAAAAAAAAABAOb/AwAAAAAAAAABAOf/AwAAAAAAAAABAOj/AwAAAAAAAAABAOn/AwAAAAAAAAABAOr/AwAAAAAAAAABAOv/AwAAAAAAAAABAOz/AwAAAAAAAAABAO3/AwAAAAAAAAABAO7/AwAAAAAAAAABAO//AwAAAAAAAAABAPD/AwAAAAAAAAABAPH/AwAAAAAAAAABAPL/AwAAAAAAAAABAPP/AwAAAAAAAAABAPT/AwAAAAAAAAABAPX/AwAAAAAAAAABAPb/AwAAAAAAAAABAPf/AwAAAAAAAAABAPj/AwAAAAAAAAABAPn/AwAAAAAAAAABAPr/AwAAAAAAAAABAPv/AwAAAAAAAAABAPz/AwAAAAAAAAABAP3/AwAAAAAAAAABAP7/AwAAAAAAAAABAP//AwAAAAAAAAACANb/AwAAAAAAAAACANf/AwAAAAAAAAACANj/AwAAAAAAAAACANn/AwAAAAAAAAACANr/AwAAAAAAAAACANv/AwAAAAAAAAACANz/AwAAAAAAAAACAN3/AwAAAAAAAAACAN7/AwAAAAAAAAACAN//AwAAAAAAAAACAOD/AwAAAAAAAAACAOH/AwAAAAAAAAACAOL/AwAAAAAAAAACAOP/AwAAAAAAAAACAOT/AwAAAAAAAAACAOX/AwAAAAAAAAACAOb/AwAAAAAAAAACAOf/AwAAAAAAAAACAOj/AwAAAAAAAAACAOn/AwAAAAAAAAACAOr/AwAAAAAAAAACAOv/AwAAAAAAAAACAOz/AwAAAAAAAAACAO3/AwAAAAAAAAACAO7/AwAAAAAAAAACAO//AwAAAAAAAAACAPD/AwAAAAAAAAACAPH/AwAAAAAAAAACAPL/AwAAAAAAAAACAPP/AwAAAAAAAAACAPT/AwAAAAAAAAACAPX/AwAAAAAAAAACAPb/AwAAAAAAAAACAPf/AwAAAAAAAAACAPj/AwAAAAAAAAACAPn/AwAAAAAAAAACAPr/AwAAAAAAAAACAPv/AwAAAAAAAAACAPz/AwAAAAAAAAACAP3/AwAAAAAAAAACAP7/AwAAAAAAAAACAP//AwAAAAAAAAADANb/AwAAAAAAAAADANf/AwAAAAAAAAADANj/AwAAAAAAAAADANn/AwAAAAAAAAADANr/AwAAAAAAAAADANv/AwAAAAAAAAADANz/AwAAAAAAAAADAN3/AwAAAAAAAAADAN7/AwAAAAAAAAADAN//AwAAAAAAAAADAOD/AwAAAAAAAAADAOH/AwAAAAAAAAADAOL/AwAAAAAAAAADAOP/AwAAAAAAAAADAOT/AwAAAAAAAAADAOX/AwAAAAAAAAADAOb/AwAAAAAAAAADAOf/AwAAAAAAAAADAOj/AwAAAAAAAAADAOn/AwAAAAAAAAADAOr/AwAAAAAAAAADAOv/AwAAAAAAAAADAOz/AwAAAAAAAAADAO3/AwAAAAAAAAADAO7/AwAAAAAAAAADAO//AwAAAAAAAAADAPD/AwAAAAAAAAADAPH/AwAAAAAAAAADAPL/AwAAAAAAAAADAPP/AwAAAAAAAAADAPT/AwAAAAAAAAADAPX/AwAAAAAAAAADAPb/AwAAAAAAAAADAPf/AwAAAAAAAAADAPj/AwAAAAAAAAADAPn/AwAAAAAAAAADAPr/AwAAAAAAAAADAPv/AwAAAAAAAAADAPz/AwAAAAAAAAADAP3/AwAAAAAAAAADAP7/AwAAAAAAAAADAP//AwAAAAAAAAAEANb/AwAAAAAAAAAEANf/AwAAAAAAAAAEANj/AwAAAAAAAAAEANn/AwAAAAAAAAAEANr/AwAAAAAAAAAEANv/AwAAAAAAAAAEANz/AwAAAAAAAAAEAN3/AwAAAAAAAAAEAN7/AwAAAAAAAAAEAN//AwAAAAAAAAAEAOD/AwAAAAAAAAAEAOH/AwAAAAAAAAAEAOL/AwAAAAAAAAAEAOP/AwAAAAAAAAAEAOT/AwAAAAAAAAAEAOX/AwAAAAAAAAAEAOb/AwAAAAAAAAAEAOf/AwAAAAAAAAAEAOj/AwAAAAAAAAAEAOn/AwAAAAAAAAAEAOr/AwAAAAAAAAAEAOv/AwAAAAAAAAAEAOz/AwAAAAAAAAAEAO3/AwAAAAAAAAAEAO7/AwAAAAAAAAAEAO//AwAAAAAAAAAEAPD/AwAAAAAAAAAEAPH/AwAAAAAAAAAEAPL/AwAAAAAAAAAEAPP/AwAAAAAAAAAEAPT/AwAAAAAAAAAEAPX/AwAAAAAAAAAEAPb/AwAAAAAAAAAEAPf/AwAAAAAAAAAEAPj/AwAAAAAAAAAEAPn/AwAAAAAAAAAEAPr/AwAAAAAAAAAEAPv/AwAAAAAAAAAEAPz/AwAAAAAAAAAEAP3/AwAAAAAAAAAEAP7/AwAAAAAAAAAEAP//AwAAAAAAAAA=")
 tile_set = SubResource("TileSet_lbhrr")
@@ -768,6 +1236,9 @@ tile_set = SubResource("TileSet_lbhrr")
 stream = SubResource("AudioStreamWAV_kvuet")
 volume_db = 4.374
 autoplay = true
+
+[node name="spawn2" type="Marker2D" parent="." unique_id=1627841059]
+position = Vector2(0, -723)
 
 [connection signal="body_entered" from="spike" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike2" to="Player" method="_on_spike_body_entered"]
@@ -785,6 +1256,10 @@ autoplay = true
 [connection signal="body_entered" from="orb10" to="Player" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="orb11" to="Player" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="orb12" to="Player" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="orb14" to="Player" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="orb15" to="Player" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="orb16" to="Player" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="orb17" to="Player" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="orb13" to="Player" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="spike4" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike5" to="Player" method="_on_spike_body_entered"]
@@ -794,6 +1269,11 @@ autoplay = true
 [connection signal="body_entered" from="spike18" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike19" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike20" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike41" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike42" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike44" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike34" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike43" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike7" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike8" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike11" to="Player" method="_on_spike_body_entered"]
@@ -804,4 +1284,20 @@ autoplay = true
 [connection signal="body_entered" from="spike25" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike14" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike15" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike23" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike24" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike26" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike27" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike28" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike29" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike37" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike38" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike39" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike40" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike35" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike36" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike30" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike31" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike32" to="Player" method="_on_spike_body_entered"]
+[connection signal="body_entered" from="spike33" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike16" to="Player" method="_on_spike_body_entered"]
