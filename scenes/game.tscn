@@ -936,18 +936,6 @@ shape = SubResource("RectangleShape2D_yf5fn")
 [node name="Sprite2D" type="Sprite2D" parent="tile25" unique_id=1094909879]
 texture = ExtResource("4_iywne")
 
-[node name="spike26" type="Area2D" parent="." unique_id=1029525813]
-position = Vector2(-9.000002, -833)
-rotation = -0.002688284
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spike26" unique_id=21261581]
-z_index = 2
-shape = SubResource("CircleShape2D_5s0fj")
-
-[node name="Sprite2D" type="Sprite2D" parent="spike26" unique_id=1985016226]
-rotation = 3.1415927
-texture = ExtResource("2_lnu2h")
-
 [node name="tile26" type="StaticBody2D" parent="." unique_id=1166544373]
 position = Vector2(11.000002, -813)
 
@@ -969,27 +957,6 @@ shape = SubResource("CircleShape2D_5s0fj")
 rotation = 3.1415927
 texture = ExtResource("2_lnu2h")
 
-[node name="tile27" type="StaticBody2D" parent="." unique_id=819615761]
-position = Vector2(-8.999999, -813)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="tile27" unique_id=1254437607]
-shape = SubResource("RectangleShape2D_yf5fn")
-
-[node name="Sprite2D" type="Sprite2D" parent="tile27" unique_id=362650648]
-texture = ExtResource("4_iywne")
-
-[node name="spike28" type="Area2D" parent="." unique_id=683710916]
-position = Vector2(-9.000002, -833)
-rotation = -0.002688284
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spike28" unique_id=1789422899]
-z_index = 2
-shape = SubResource("CircleShape2D_5s0fj")
-
-[node name="Sprite2D" type="Sprite2D" parent="spike28" unique_id=1583493810]
-rotation = 3.1415927
-texture = ExtResource("2_lnu2h")
-
 [node name="tile28" type="StaticBody2D" parent="." unique_id=821922898]
 position = Vector2(11.000002, -813)
 
@@ -997,6 +964,15 @@ position = Vector2(11.000002, -813)
 shape = SubResource("RectangleShape2D_yf5fn")
 
 [node name="Sprite2D" type="Sprite2D" parent="tile28" unique_id=1876036766]
+texture = ExtResource("4_iywne")
+
+[node name="tile27" type="StaticBody2D" parent="." unique_id=819615761]
+position = Vector2(-8.999999, -813)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile27" unique_id=1254437607]
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Sprite2D" type="Sprite2D" parent="tile27" unique_id=362650648]
 texture = ExtResource("4_iywne")
 
 [node name="spike29" type="Area2D" parent="." unique_id=400369799]
@@ -1041,18 +1017,6 @@ shape = SubResource("RectangleShape2D_yf5fn")
 [node name="Sprite2D" type="Sprite2D" parent="tile34" unique_id=1321844864]
 texture = ExtResource("4_iywne")
 
-[node name="spike38" type="Area2D" parent="." unique_id=1615654488]
-position = Vector2(11.000002, -917)
-rotation = -0.002688284
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spike38" unique_id=1688877066]
-z_index = 2
-shape = SubResource("CircleShape2D_5s0fj")
-
-[node name="Sprite2D" type="Sprite2D" parent="spike38" unique_id=1485660693]
-rotation = 3.1415927
-texture = ExtResource("2_lnu2h")
-
 [node name="tile35" type="StaticBody2D" parent="." unique_id=1576471649]
 position = Vector2(-8.999999, -897)
 
@@ -1082,18 +1046,6 @@ shape = SubResource("RectangleShape2D_yf5fn")
 
 [node name="Sprite2D" type="Sprite2D" parent="tile36" unique_id=1961593317]
 texture = ExtResource("4_iywne")
-
-[node name="spike40" type="Area2D" parent="." unique_id=578365445]
-position = Vector2(11.000002, -917)
-rotation = -0.002688284
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="spike40" unique_id=90427946]
-z_index = 2
-shape = SubResource("CircleShape2D_5s0fj")
-
-[node name="Sprite2D" type="Sprite2D" parent="spike40" unique_id=1497893371]
-rotation = 3.1415927
-texture = ExtResource("2_lnu2h")
 
 [node name="spike35" type="Area2D" parent="." unique_id=318088133]
 position = Vector2(55, -885)
@@ -1298,14 +1250,10 @@ position = Vector2(0, -723)
 [connection signal="body_entered" from="spike15" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike23" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike24" to="Player" method="_on_spike_body_entered"]
-[connection signal="body_entered" from="spike26" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike27" to="Player" method="_on_spike_body_entered"]
-[connection signal="body_entered" from="spike28" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike29" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike37" to="Player" method="_on_spike_body_entered"]
-[connection signal="body_entered" from="spike38" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike39" to="Player" method="_on_spike_body_entered"]
-[connection signal="body_entered" from="spike40" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike35" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike36" to="Player" method="_on_spike_body_entered"]
 [connection signal="body_entered" from="spike30" to="Player" method="_on_spike_body_entered"]
